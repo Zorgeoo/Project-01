@@ -1,0 +1,177 @@
+@media only screen and (min-width:1200px) {
+    .menu-bar {
+        display: none;
+    }
+
+    .container {
+        width: 1140px;
+    }
+
+    .desktop-menu-container {
+        display: flex;
+    }
+
+    header {
+        display: flex;
+        padding: 16px 80px;
+        justify-content: space-between;
+    }
+
+    header div {
+        display: flex;
+    }
+
+    header>div {
+        gap: 48px;
+        align-items: center;
+    }
+
+    .landing-page {
+        display: flex;
+    }
+
+    .landing-page>div {
+        flex: 1;
+    }
+
+    .desktop-menu {
+        gap: 24px;
+    }
+
+    .desktop-download {
+        padding: 6px 16px;
+        color: white;
+        background-color: black;
+        border-radius: 12px;
+        align-items: center;
+    }
+
+    .landing-page {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .landing-page>div:first-child {
+        flex: 1;
+        position: relative;
+    }
+
+    .landing-page>div:last-child {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding-top: 96px;
+        padding-left: 64px;
+    }
+
+
+    .grey-border {
+        left: 35%;
+        top: 30%;
+    }
+
+    h1 {
+        font-size: 55px;
+    }
+
+    .second-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .second-section>div:last-child {
+        display: flex;
+    }
+
+    .second-section>div:last-child>div {
+        flex: 1;
+    }
+
+    .paragraph {
+        padding-left: 64px;
+    }
+
+    .tom-picture-second {
+        margin: auto;
+    }
+
+    .grey-border-second {
+        position: absolute;
+        left: 22%;
+        top: 12%;
+    }
+
+    .sixth-section-container>.works {
+        flex-direction: row-reverse;
+    }
+
+    .grid {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+
+    .card {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        gap: 50px;
+        margin: auto;
+
+    }
+
+    .card>div:last-child {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .card>div:nth-child(2) {
+        order: 2;
+        gap: 50px;
+    }
+
+    .fourth-section>div:last-child {
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .works {
+        display: flex;
+        gap: 50px;
+        margin: 144px;
+    }
+
+    .work-details {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        flex: 1;
+    }
+
+    .work-image {
+        flex: 1;
+    }
+
+    .work-image>img {
+        width: 100%;
+    }
+
+    .contact {
+        font-size: 25px;
+    }
+}
+
+
+
+@media only screen and (min-width:1400px) {
+    .container {
+        width: 1320px;
+    }
+}
