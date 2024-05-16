@@ -186,6 +186,7 @@ header:has(#bar:checked)+.menu-container {
     flex-direction: column;
     gap: 20px;
     padding-top: 48px;
+    padding-right: 80px;
 }
 
 .paragraph>ul {
@@ -196,7 +197,7 @@ header:has(#bar:checked)+.menu-container {
 }
 
 .third-section {
-    padding: 64px 16px;
+    padding: 16px;
 }
 
 .third-section>div {
@@ -210,6 +211,7 @@ header:has(#bar:checked)+.menu-container {
     background-color: #e6e7eb;
     border-radius: 12px;
     margin-bottom: 16px;
+    margin-top: 64px;
 }
 
 .grid {

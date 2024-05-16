@@ -79,6 +79,9 @@
         flex-direction: column;
     }
 
+    .second-section-container {
+        padding: 64px 0;
+    }
 
     .second-section>div:last-child {
         display: flex;
@@ -139,6 +142,10 @@
         gap: 50px;
         flex-direction: column;
         margin-top: 50px;
+    }
+
+    .fifth-section-container {
+        padding-top: 64px;
     }
 
     .works {
