@@ -1,0 +1,66 @@
+.circle {
+    border: 5px green solid;
+    height: 200px;
+    width: 200px;
+    margin: 40%;
+    top: 40%;
+    border-radius: 50%;
+    border-left: 5px red solid;
+    animation: move 2s linear infinite;
+}
+
+body {
+    background-color: black;
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.circ {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: blue;
+    animation: skip 1s ease-in-out infinite;
+
+}
+
+.small {
+    animation-delay: 0s;
+}
+
+.medium {
+    animation-delay: .33s;
+}
+
+.large {
+    animation-delay: 0.66s;
+}
+
+.contain {
+    display: flex;
+    position: absolute;
+    left: 40%;
+    gap: 10px;
+}
+
+@keyframes skip {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.6);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
