@@ -33,8 +33,14 @@ const a = [5, 10, 7, 8, 49];
 // }
 // console.log(even(a))
 
-const b = [15, 62, 46, 875, 5032]
+const b = [65, 62, 46, 875, 503266, 62432,4564564894]
 
 function max(arr) {
-    for (let i = 0; i < arr.length )
+    let count=arr[0]
+    for (let i = 1; i < arr.length; i=i+1){
+        if (arr[i]>count){
+            count=arr[i]
+        }
+    }  return count
 }
+console.log(max(b))
