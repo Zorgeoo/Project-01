@@ -24,23 +24,23 @@
 // } 
 // const x = max(12, 11)
 // console.log(x)
-// function max(a, b, c) {
-//     if (a > b) {
-//         if (a > c) {
-//             return a
-//         } else {
-//             return c
-//         }
-//     }
-//     else {
-//         if (b > c) {
-//             return b
-//         }
-//         else {
-//             return c
-//         }
-//     }
-// }
+function max(a, b, c) {
+    if (a > b) {
+        if (a > c) {
+            return a
+        } else {
+            return c
+        }
+    }
+    else {
+        if (b > c) {
+            return b
+        }
+        else {
+            return c
+        }
+    }
+}
 
 
 
@@ -71,12 +71,12 @@
 // const y = number(2)
 // console.log(y)
 
-function age(a) {
-    if (a <= 18) {
-        return "бацаан"
-    } else {
-        return "архи"
-    }
-}
-const x = age(15)
-console.log(x)
+// function age(a) {
+//     if (a <= 18) {
+//         return "бацаан"
+//     } else {
+//         return "архи"
+//     }
+// }
+// const x = age(15)
+// console.log(x)

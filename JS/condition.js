@@ -97,13 +97,14 @@
 // }
 // var p = clas(3, "master")
 
-function createCounter(n) {
-    var count = n
-    return function () {
-        var counter = count
-        count = count + 1
-        return counter
-    }
-}
-var x = createCounter(5)
-console.log(x)
+// function createCounter(n) {
+//     var count = n
+//     return function () {
+//         var counter = count
+//         count = count + 1
+//         return counter
+//     }
+// }
+// var x = createCounter(5)
+// console.log(x)
+
