@@ -34,14 +34,15 @@
 // console.log(min(a))
 
 // 4.Өгөгдсөн массивын хамгийн их элемент хэд дэх нь вэ? Хэрэв хамгийн их элементийн тоо 1-ээс олон бол бага дугаарыг нь хэвлэнэ.
-const a=[-115,-15,15,515,523,6346,5,100]
+const a = [-115, -15, 15, 515, 523, 6346, 5, 6346]
 function max(arr) {
-    let counter=arr
+    let count = arr[0];
+    let maxIndex = 0;
     for (let i = 1; i < arr.length; i = i + 1) {
-    let count = arr[0] 
         if (arr[i] > count) {
-            count=arr[i]
-    } return counter
-}
+            count = arr[i];
+            maxIndex = i;
+        }
+    } return maxIndex
 }
 console.log(max(a))

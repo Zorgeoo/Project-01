@@ -96,3 +96,8 @@ const number = (arr) => {
     } return count
 }
 console.log(number(a))
+
+let or = {}
+
+or[2] = 1
+console.log(or)
