@@ -70,17 +70,84 @@ const a = [1, 2, 3, 4, 5, 6]
 // console.log(number(c, d))
 
 // 6. Өгөгдсөн массивийн сөрөг тоонуудыг зүүн талд нь байрлуул
-const m = [-10, 7, 3, 4, 8, -12, -145]
-const reverse = (arr) => {
-    let number = []
-    for (let i = 0; i < arr.length; i++) {
-        for (let g = i + 1; g < arr.length; g++)
-            if (arr[i] < arr[g]) {
-                number.push(arr[i])
-            }
-    } return number
-}
-console.log(reverse(m))
+// const m = [-10, 7, 3, 4, 8, -12, -145]
+
+// const reverse = (arr) => {
+//     let j = 0
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] < 0) {
+//             let t = arr[j]
+//             arr[j] = arr[i]
+//             arr[i] = t
+//             j++
+//         }
+//     } return arr
+// }
+
+// console.log(reverse(m))
+
+// 7. Дараалсан тоонуудаас бүрдэх массив өгөгдөх байсан боловч 1 тоо нь дутуу байв.Тэр тоог ол
+
+// 1-с эхэлсэн тохиолдолд:
+
+const c = [1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14, 7, 8, 9, 16, 17]
+
+// const number = (arr) => {
+//     let n = arr.length + 1
+//     let totalSum = (n * (n + 1) / 2)
+//     let numberSum = 0
+//     for (let i = 0; i < arr.length; i++) {
+//         numberSum = numberSum + arr[i]
+//     }
+//     let missingNumber = totalSum - numberSum;
+//     return missingNumber
+// }
+// console.log(number(c))
+
+// function findMissingNumber(arr) {
+//     let min = Math.min(...arr);
+//     let max = Math.max(...arr);
+
+//     // Iterate through the range between the minimum and maximum numbers
+//     for (let i = min; i <= max; i++) {
+//         let found = false;
+
+//         // Iterate through the array to check if the current number exists
+//         for (let j = 0; j < arr.length; j++) {
+//             if (arr[j] === i) {
+//                 found = true;
+//                 break;
+//             }
+//         }
+
+//         // If the current number doesn't exist in the array, it's the missing number
+//         if (!found) {
+//             return i;
+//         }
+//     }
+
+//     // If no missing number is found
+//     return null;
+// }
+
+// // Example array
+// let array = [3, 5, 7, 9]; // Assuming one number is missing in the sequence
+
+// // Find the missing number
+// console.log("Missing number:", findMissingNumber(c)); // Output: 4
 
 
-// 7. Дараалсан тоонуудаас бүрдэх массив өгөгдөх байсан боловч 1 тоо нь дутуу байв. Тэр тоог ол
+// const ex = [12, 15, 16, 17, 18, 13]
+
+// const number = (arr) => {
+//     let min = Math.min(...arr);
+//     let max = Math.max(...arr);
+//     let sum = 0
+//     let totalSum = ((min + max) * (arr.length + 1)) / 2
+//     for (let i = 0; i < arr.length; i++) {
+//         sum += arr[i]
+//     } return totalSum - sum
+// }
+// console.log(number(ex))
+// console.log(ex.length)
+
