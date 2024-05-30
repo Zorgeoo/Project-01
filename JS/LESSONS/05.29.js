@@ -72,13 +72,14 @@ const a = [1, 2, 3, 4, 5, 6]
 // 6. Өгөгдсөн массивийн сөрөг тоонуудыг зүүн талд нь байрлуул
 const m = [-10, 7, 3, 4, 8, -12, -145]
 const reverse = (arr) => {
-    let number = []
+    let type
     for (let i = 0; i < arr.length; i++) {
-        for (let g = i + 1; g < arr.length; g++)
+        for (let g = 0; g < arr.length; g++)
             if (arr[i] < arr[g]) {
-                number.push(arr[i])
+                type=arr[i]
+                arr[i]=arr[g]
             }
-    } return number
+    } return type
 }
 console.log(reverse(m))
 
