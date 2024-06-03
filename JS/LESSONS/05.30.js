@@ -48,22 +48,22 @@
 // 28 - do not round(result is less than 40) 40-38
 // 57 - do not round(60 - 57 is 3 or higher)58-60
 // Given the initial value of  for each of Sam's  students, write code to automate the rounding process.
-const aafas = [28, 37, 46, 86, 88, 94]
-const grade = (arr) => {
-    let grades = []
-    for (let i = 0; i < arr.length; i++) {
-        let gradee = arr[i]
-        if (gradee < 38) {
-            grades.push(gradee)
-        } else if (gradee % 5 >= 3) {
-            grades.push(gradee + (5 - (gradee % 5)))
-        } else {
-            grades.push(gradee)
-        }
-    } return grades
-}
-console.log(grade(aafas))
-const asa = [1, 1, 1, 2, 4, 5, 6, 6, 6]
+// const aafas = [28, 37, 46, 86, 88, 94]
+// const grade = (arr) => {
+//     let grades = []
+//     for (let i = 0; i < arr.length; i++) {
+//         let gradee = arr[i]
+//         if (gradee < 38) {
+//             grades.push(gradee)
+//         } else if (gradee % 5 >= 3) {
+//             grades.push(gradee + (5 - (gradee % 5)))
+//         } else {
+//             grades.push(gradee)
+//         }
+//     } return grades
+// }
+// console.log(grade(aafas))
+// const asa = [1, 1, 1, 2, 4, 5, 6, 6, 6]
 
 // var removeDuplicates = function (nums) {
 //     let newarr = []
@@ -77,18 +77,77 @@ const asa = [1, 1, 1, 2, 4, 5, 6, 6, 6]
 //     } return newarr
 // }
 // console.log(removeDuplicates(asa))
-function removeDuplicates(array) {
-    for (let i = 0; i < array.length; i++) {
-        for (let j = i + 1; j < array.length; j++) {
-            if (array[i] === array[j]) {
-                array.splice(j, 1);
-                j--; // Adjust index after removing element
-            }
-        }
-    }
-    return array;
-}
+// function removeDuplicates(array) {
+//     for (let i = 0; i < array.length; i++) {
+//         for (let j = i + 1; j < array.length; j++) {
+//             if (array[i] === array[j]) {
+//                 array.splice(j, 1);
+//                 j--; // Adjust index after removing element
+//             }
+//         }
+//     }
+//     return array;
+// }
 
-let array = [1, 2, 3, 4, 4, 5, 6, 6];
-let uniqueArray = removeDuplicates(array);
-console.log(uniqueArray); 
+// let array = [1, 2, 3, 4, 4, 5, 6, 6];
+// let uniqueArray = removeDuplicates(array);
+// console.log(uniqueArray);
+// var nums = [1, 2, 1]
+// var getConcatenation = function (nums) {
+//     let newarray = []
+//     for (let i = 0; i < nums.length; i++) {
+//         newarray.push(nums[i])
+//     }
+//     for (let i = 0; i < nums.length; i++) {
+//         newarray.push(nums[i])
+//     }
+//     return newarray
+// }
+
+
+// console.log(getConcatenation(nums))
+// console.log(nums.charAt)
+
+
+// const findOperator = (phoneNumber) => {
+//     const firstTwo = phoneNumber.slice(0, 2);
+//     switch (firstTwo) {
+//         case "91":
+//             return "Skytel";
+//         case "99":
+//             return "mobi";
+//         default:
+//             return "invalid"
+//     }
+// }
+
+// const a = "99112892"
+// console.log(findOperator(a))
+
+
+// Diagonal oloh
+const arr = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12],
+    [13, 14, 15, 16]]
+
+// const number = (arr) => {
+//     let newarr = []
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = 0; j < arr[i].length; j++) {
+//             if (i == j) {
+//                 newarr.push(arr[i][j])
+//             }
+//         }
+//     } return newarr
+// }
+// console.log(number(arr))
+
+// const easy = (arr) => {
+//     for (const i in arr) {
+//         console.log(arr[i][i])
+//     }
+// }
+
+// console.log(easy(arr))
