@@ -126,11 +126,11 @@
 
 
 // Diagonal oloh
-const arr = [
-    [1, 2, 3, 4],
-    [5, 6, 7, 8],
-    [9, 10, 11, 12],
-    [13, 14, 15, 16]]
+// const arr = [
+//     [1, 2, 3, 4],
+//     [5, 6, 7, 8],
+//     [9, 10, 11, 12],
+//     [13, 14, 15, 16]]
 
 // const number = (arr) => {
 //     let newarr = []
@@ -153,28 +153,28 @@ const arr = [
 // console.log(easy(arr))
 
 //Input: candies = [2,3,5,1,3], extraCandies = 3
-const candies = [2,3,5,1,3]
+// const candies = [2,3,5,1,3]
 
-const max=(candies)=>{
-    let max=candies[0]
-    for(let i=0; i<candies.length;i++){
-        if(max<candies[i]){
-            max=candies[i]
-        }
-    } return max
-}
-console.log(max(candies))
+// const max=(candies)=>{
+//     let max=candies[0]
+//     for(let i=0; i<candies.length;i++){
+//         if(max<candies[i]){
+//             max=candies[i]
+//         }
+//     } return max
+// }
+// console.log(max(candies))
 
-const mostCandy=(candies, extraCandies)=>{
-    let arr=[]
-    let maxCandy=max(candies)
-    for(let i=0; i<candies.length;i++){
-        if(candies[i]+extraCandies>=maxCandy){
-            arr.push(true)
-        } else arr.push(false)
-    } return arr
-}
-const maxi = arr.reduce(candies)
-console.log(maxi)
+// const mostCandy=(candies, extraCandies)=>{
+//     let arr=[]
+//     let maxCandy=max(candies)
+//     for(let i=0; i<candies.length;i++){
+//         if(candies[i]+extraCandies>=maxCandy){
+//             arr.push(true)
+//         } else arr.push(false)
+//     } return arr
+// }
+// const maxi = arr.reduce(candies)
+// console.log(maxi)
 
-console.log(mostCandy(candies,3))
+// console.log(mostCandy(candies,3))
