@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+.container {
+    background-color: #252b42;
+    height: 100vh;
+    width: 100w;
+}
+
+.header {
+
+    width: 70%;
+    margin: auto;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    font-size: 22px;
+}
+
+.header>div {
+    padding-top: 17px;
+}
+
+.navbar {
+    display: flex;
+    width: 50%;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar>div:first-child {
+    font-size: 32px;
+}
+
+.navbar>div {
+    display: flex;
+
+    gap: 21px;
+}
+
+.navbar-end {
+    display: flex;
+
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-end>div {
+    display: flex;
+}
+
+.join {
+    padding: 15px 25px;
+    background-color: #23a6f0;
+    border-radius: 5px;
+    gap: 15px;
+}
+
+.landing-page {
+
+    height: 90vh;
+    display: flex;
+}
+
+.landing-page>div {
+    flex: 1;
+    margin: 148px 142px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 10%;
+}
+
+.landing-page>div:first-child {
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 40px;
+}
+
+.buttons>div {
+    padding: 15px 40px;
+    border-radius: 5px;
+}
+
+.buttons>div:first-child {
+    background-color: #23a6f0;
+    color: white;
+}
+
+.buttons>div:last-child {
+    border: 1px solid #23a6f0;
+    color: #23a6f0;
+}
+
+.images {
+    position: relative;
+    padding-right: 300px;
+}
+
+.images>div:first-child {
+    position: absolute;
+    right: 0;
+}
+
+.images>div:nth-child(2) {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.images>div:nth-child(3) {
+    position: absolute;
+    left: 200px;
+    bottom: 100px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.texts {
+    padding: 20px 200px 0 100px;
+}
