@@ -1,0 +1,21 @@
+.container {
+    height: 600px;
+    width: 600px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+}
+
+.container>div {
+    border: 1px solid black;
+}
+
+.button {
+    margin: auto;
+    padding: 10px 20px;
+    border: 2px solid aqua;
+    width: fit-content;
+    background-color: blue;
+    border-radius: 5px;
+}
