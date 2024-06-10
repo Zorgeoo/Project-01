@@ -1,0 +1,29 @@
+.button {
+    padding: 10px 20px;
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+.container {
+    margin: auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 500px;
+    gap: 100px;
+    border-radius: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timer {
+    width: 200px;
+    height: fit-content;
+    font-size: 32px;
+    text-align: center;
+    margin: auto;
+}
