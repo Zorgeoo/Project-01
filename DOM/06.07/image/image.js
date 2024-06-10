@@ -1,6 +1,6 @@
 const next = document.querySelector('#next')
-const images = document.querySelector('.box')
+const images = document.querySelectorAll('img')
 
 next.addEventListener("click", () => {
-    box.style.border = '2px solid red'
+    images.style.border = '2px solid red'
 })
