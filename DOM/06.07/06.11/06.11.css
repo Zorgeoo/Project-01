@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 50px;
+}
+
+.innerContainer {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0px 11px 23px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 11px 23px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 11px 23px 1px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+}
+
+.innerContainer>div {
+    flex: 1;
+}
+
+.signIn {
+    background-color: #58c2db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+
+.signIn>div:first-child {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.sign-in-button {
+    background-color: transparent;
+    border-radius: 20px;
+    width: fit-content;
+    color: white;
+    padding: 10px 40px;
+    border: 1px solid white;
+    font-weight: bold;
+}
+
+.sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up>div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputs>input {
+    background-color: #eeeeee;
+    border: transparent;
+    height: 30px;
+    width: 300px;
+}
+
+i {
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.sign-up-button {
+    background-color: #58c2db;
+    border-radius: 20px;
+    width: fit-content;
+    color: white;
+    padding: 10px 40px;
+    border: 1px solid white;
+    font-weight: bold;
+}
+
+.second-container {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0px 11px 23px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 11px 23px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 11px 23px 1px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.second-container>div {
+    flex: 1;
+}
