@@ -16,17 +16,22 @@ const pauseBtn = document.querySelector("#pause")
 const resetBtn = document.querySelector("#reset")
 let count = 0
 let timerz
+let a=true
 startBtn.addEventListener("click", () => {
-    timerz = setInterval(() => {
-        count = count + 0.1
-        timer.textContent = count.toFixed(2)
-    }, 100)
+    if(a===true){
+        timerz = setInterval(() => {
+            count = count + 0.1
+            timer.textContent = count.toFixed(2)
+        }, 100)
+    } a=false
 })
 pauseBtn.addEventListener("click", () => {
+    a=true
     clearInterval(timerz)
 })
 
 resetBtn.addEventListener("click", () => {
+    a=true
     clearInterval(timerz)
     count = 0
     timer.textContent = 0
