@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.6s ease-in-out all;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    width: 40%;
+    height: 40%;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+.container>div{
+    width: 50%;
+    position: relative;
+}
+.left-container>div{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sign-in{
+    z-index: 10;
+    transform: translateX(0);
+    transition: 0.6s ease-in-out all;
+    background-color: white;
+}
+.sign-up{
+    z-index: 0;
+    transform: translateX(0);
+    transition: 0.6s ease-in-out all;
+    background-color: white;
+}
+.toggle>div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.active .sign-up{
+    transform: translateX(100%);
+    z-index: 20;
+}
+.active .sign-in{
+    transform: translateX(100%);
+}
+.toggle-right{
+    position: absolute;
+    left: -200%;
+}
+.toggle-left{
+    position: absolute;
+}
+.toggle-container{
+    position: relative;
+}
+.active .toggle-right{
+    transform: translateX(200%);
+    transition: 0.6s ease-in-out all;
+}
+.active .toggle-left{
+    transform: translate(200%);
+    transition: 0.6s ease-in-out all;
+}
+.toggle{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: pink;
+    z-index: 25;
+}
+.active .toggle{
+    transform: translateX(-100%);
+    transition: 0.6s ease-in-out all;
+}
+button{
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px 45px;
+    width: fit-content;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+}
+.toggle{
+    color: white;
+}
