@@ -79,7 +79,9 @@ button {
     border: 2px solid black;
     background-color: black;
     color: white;
+    cursor: pointer;
 }
+
 
 .active {
     visibility: visible;

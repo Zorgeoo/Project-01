@@ -1,18 +1,20 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     transition: 0.6s ease-in-out all;
     font-family: "Montserrat", sans-serif;
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
 }
-.container{
+
+.container {
     width: 40%;
     height: 40%;
     display: flex;
@@ -20,11 +22,13 @@ body{
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
-.container>div{
+
+.container>div {
     width: 50%;
     position: relative;
 }
-.left-container>div{
+
+.left-container>div {
     display: flex;
     height: 100%;
     width: 100%;
@@ -36,19 +40,21 @@ body{
     left: 0;
 }
 
-.sign-in{
+.sign-in {
     z-index: 10;
     transform: translateX(0);
     transition: 0.6s ease-in-out all;
     background-color: white;
 }
-.sign-up{
+
+.sign-up {
     z-index: 0;
     transform: translateX(0);
     transition: 0.6s ease-in-out all;
     background-color: white;
 }
-.toggle>div{
+
+.toggle>div {
     width: 100%;
     height: 100%;
     display: flex;
@@ -56,43 +62,53 @@ body{
     justify-content: space-around;
     align-items: center;
 }
-.active .sign-up{
+
+.active .sign-up {
     transform: translateX(100%);
     z-index: 20;
 }
-.active .sign-in{
+
+.active .sign-in {
     transform: translateX(100%);
 }
-.toggle-right{
+
+.toggle-right {
     position: absolute;
     left: -200%;
 }
-.toggle-left{
+
+.toggle-left {
     position: absolute;
 }
-.toggle-container{
+
+.toggle-container {
     position: relative;
 }
-.active .toggle-right{
+
+.active .toggle-right {
     transform: translateX(200%);
     transition: 0.6s ease-in-out all;
 }
-.active .toggle-left{
+
+.active .toggle-left {
     transform: translate(200%);
     transition: 0.6s ease-in-out all;
 }
-.toggle{
+
+.toggle {
     height: 100%;
     width: 100%;
     position: absolute;
     background-color: pink;
     z-index: 25;
 }
-.active .toggle{
+
+.active .toggle {
     transform: translateX(-100%);
     transition: 0.6s ease-in-out all;
 }
-button{
+
+button {
     background-color: transparent;
     border-radius: 5px;
     padding: 10px 45px;
@@ -100,7 +116,14 @@ button{
     border: 1px solid white;
     color: white;
     font-weight: bold;
+    cursor: pointer;
 }
-.toggle{
+
+.toggle {
     color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: pink;
 }
