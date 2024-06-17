@@ -10,13 +10,42 @@
 
 <body>
     <div class="container">
-        <button class="openModal">OPEN MODAL</button>
-        <div class="cards"></div>
+        <button class="openModal">Add Task</button>
+        <div class="statusContainer">
+            <div>
+                <h1>To Do</h1>
+                <div class="cards">To Do</div>
+            </div>
+            <div>
+                <h1>In Progress</h1>
+                <div class="inProgress">In Progress</div>
+            </div>
+            <div>
+                <h1>Done</h1>
+                <div class="done">Done</div>
+            </div>
+            <div>`
+                <h1>Blocked</h1>
+                <div class="blocked">Blocked</div>
+            </div>
+        </div>
     </div>
     <div class="overlay">
         <form>
             <div>Hi MODAL bn</div>
             <button class="esc">X</button>
+            <label for="selector">Choose:</label>
+            <select name="Priority" id="selector">
+                <option value="high" selected="selected">high</option>
+                <option value="medium">medium</option>
+                <option value="low">low</option>
+            </select>
+            <select name="" id="statusSelector">
+                <option value="To Do">To Do</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Done">Done</option>
+                <option value="Blocked">Blocked</option>
+            </select>
             <input type="text" class="title" placeholder="title">
             <input type="text" class="textArea" placeholder="description">
             <button class="create" type="submit">CREATE</button>
