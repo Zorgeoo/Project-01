@@ -30,7 +30,7 @@ esc.addEventListener("click", (event) => {
 
 const myFunction = (title, description, id, selector, status) => {
     return `<div class="card">
-    <input type="checkbox" id="checkbox-${id}" onchange="switchItem(${id})">
+    <input type="checkbox" id="${id}" onchange="switchItem(${id})">
     <button onclick="deleteItem(${id})" class="small" >X</button>
     <div>Priority:${selector}</div>
     <div>Status:${status}</div>
