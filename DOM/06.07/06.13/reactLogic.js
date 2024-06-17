@@ -28,12 +28,11 @@ esc.addEventListener("click", (event) => {
     overlay.classList.remove("active")
 })
 
-const myFunction = (title, description, id, selector, status) => {
+const myFunction = (title, description, id, selector) => {
     return `<div class="card">
     <input type="checkbox" id="${id}" onchange="switchItem(${id})">
     <button onclick="deleteItem(${id})" class="small" >X</button>
     <div>Priority:${selector}</div>
-    <div>Status:${status}</div>
     <h1>${title}</h1>
     <p>${description}</p>`
 }
@@ -118,4 +117,4 @@ const switchItem = (id) => {
     setData(newData)
 }
 
-// render();
+render();
