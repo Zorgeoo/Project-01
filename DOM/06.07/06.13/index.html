@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/a3582d42c6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -13,42 +18,69 @@
         <button class="openModal">Add Task</button>
         <div class="statusContainer">
             <div>
-                <h1>To Do</h1>
-                <div class="cards">To Do</div>
+                <div id="toDoCount" class="counter"></div>
+                <div class="headerContainer">
+                    <i class="fa-solid fa-circle" style="color: #adadae;"></i>
+                    <h1>To Do</h1>
+                </div>
+                <div class="cards tt">To Do</div>
             </div>
             <div>
-                <h1>In Progress</h1>
-                <div class="inProgress">In Progress</div>
+                <div id="inProCount" class="counter"></div>
+                <div class="headerContainer">
+                    <i class="fa-solid fa-circle" style="color: #FFD43B;"></i>
+                    <h1>In Progress</h1>
+                </div>
+                <div class="inProgress tt">In Progress</div>
             </div>
             <div>
-                <h1>Done</h1>
-                <div class="done">Done</div>
+                <div id="doneCount" class="counter"></div>
+                <div class="headerContainer">
+                    <i class="fa-solid fa-circle" style="color: #00cc8f;"></i>
+                    <h1>Done</h1>
+                </div>
+                <div class="done tt">Done</div>
             </div>
-            <div>`
-                <h1>Blocked</h1>
-                <div class="blocked">Blocked</div>
+            <div>
+                <div id="blockedCount" class="counter"></div>
+                <div class="headerContainer">
+                    <i class="fa-solid fa-circle" style="color: #ff0000;"></i>
+                    <h1>Blocked</h1>
+                </div>
+                <div class="blocked tt">Blocked</div>
             </div>
         </div>
     </div>
     <div class="overlay">
         <form>
-            <div>Hi MODAL bn</div>
+            <h1>Add task</h1>
             <button class="esc">X</button>
-            <label for="selector">Choose:</label>
-            <select name="Priority" id="selector">
-                <option value="high" selected="selected">high</option>
-                <option value="medium">medium</option>
-                <option value="low">low</option>
-            </select>
-            <select name="" id="statusSelector">
-                <option value="To Do">To Do</option>
-                <option value="In Progress">In Progress</option>
-                <option value="Done">Done</option>
-                <option value="Blocked">Blocked</option>
-            </select>
-            <input type="text" class="title" placeholder="title">
-            <input type="text" class="textArea" placeholder="description">
-            <button class="create" type="submit">CREATE</button>
+            <div>
+                <label for="selector">Priority</label>
+                <select name="Priority" id="selector" class="child">
+                    <option value="high" selected="selected">high</option>
+                    <option value="medium">medium</option>
+                    <option value="low">low</option>
+                </select>
+            </div>
+            <div>
+                <label for="statusSelector">Status</label>
+                <select name="" id="statusSelector" class="child">
+                    <option value="To Do">To Do</option>
+                    <option value="In Progress">In Progress</option>
+                    <option value="Done">Done</option>
+                    <option value="Blocked">Blocked</option>
+                </select>
+            </div>
+            <div>
+                <label for="title">Title</label>
+                <input type="text" class="title child">
+            </div>
+            <div>
+                <label for="textArea">Description</label>
+                <input type="text" class="textArea child">
+            </div>
+            <button class="create" type="submit">Add task</button>
         </form>
     </div>
     <script src="./reactLogic.js"></script>

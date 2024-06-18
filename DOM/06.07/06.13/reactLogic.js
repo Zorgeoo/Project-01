@@ -28,12 +28,12 @@ esc.addEventListener("click", (event) => {
     overlay.classList.remove("active")
 })
 
-const myFunction = (title, description, id, selector) => {
+const myFunction = (title, description, id, selector, status) => {
     return `<div class="card">
-    <input type="checkbox" id="${id}" onchange="switchItem(${id})">
+    <input type="checkbox" ${status === "Done" ? "checked" : ""} id="myCheckBox" onclick="switchItem(${id})">
     <button onclick="deleteItem(${id})" class="small" >X</button>
     <div>Priority:${selector}</div>
-    <h1>${title}</h1>
+    <h2>${title}</h2>
     <p>${description}</p>`
 }
 
@@ -64,6 +64,27 @@ const render = () => {
     blocked.innerHTML = ""
     inProgress.innerHTML = ""
     done.innerHTML = ""
+    const toDoArr = []
+    const blockedArr = []
+    const inProArr = []
+    const doneArr = []
+
+    data.forEach((item) => {
+        if (item.status === "To Do") {
+            toDoArr.push(myFunction({ ...item }));
+        } else if (item.status === "Blocked") {
+            blockedArr.push(myFunction({ ...item }));
+        } else if (item.status === "In Progress") {
+            inProArr.push(myFunction({ ...item }));
+        } else if (item.status === "Done") {
+            doneArr.push(myFunction({ ...item }));
+        }
+    }
+    )
+    document.querySelector("#toDoCount").innerHTML = toDoArr.length
+    document.querySelector("#inProCount").innerHTML = inProArr.length
+    document.querySelector("#doneCount").innerHTML = doneArr.length
+    document.querySelector("#blockedCount").innerHTML = blockedArr.length
 
     data.forEach((item) => {
         if (item.status === "To Do") {

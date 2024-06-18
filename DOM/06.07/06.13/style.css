@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -17,51 +18,63 @@
     color: white;
 }
 
+#myCheckBox {
+    position: absolute;
+    left: 5%;
+}
+
 
 .statusContainer {
     display: flex;
-    width: 100%;
+    width: 90%;
     height: 90%;
-    position: absolute;
-    bottom: 0;
     gap: 50px;
+    margin: 100px;
+}
+
+.small {
+    background-color: transparent;
+    border: 0px;
 }
 
 .statusContainer>div {
     flex: 1;
-    border: 1px solid lightgray;
     border-radius: 10px;
-}
-
-.cards {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    background-color: black;
     gap: 50px;
-    overflow: hidden;
-    align-items: center;
+    position: relative;
 }
 
 .openModal {
     position: absolute;
-    right: 0;
+    right: 5%;
     top: 2%;
     background-color: #00a300;
     border-radius: 5px;
 }
 
 .statusContainer>div>div>div {
-    padding: 10px 45px;
-    width: 100%;
+    padding: 10px 40px;
+    width: 90%;
+    margin: auto;
     height: fit-content;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    background-color: #101010;
-    background-color: blue;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    position: relative;
 }
 
-.card {
-    position: relative;
+.tt {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.headerContainer {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 40px;
 }
 
 .card>button {
@@ -70,6 +83,13 @@
     position: absolute;
     right: 0;
     top: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
 }
 
 .overlay {
@@ -83,24 +103,57 @@
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(16px);
-
 }
 
 form {
     margin: auto;
-    width: 40%;
+    width: 30%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    border: 2px solid orange;
-    align-items: center;
+    padding: 50px 50px;
+    gap: 30px;
     position: relative;
-    color: black;
+    color: white;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    border: 2px solid lightgray;
 }
 
-input {
-    width: 50%;
+form>div {
+    display: flex;
+    flex-direction: column;
 }
+
+.child {
+    background-color: transparent;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    height: 40px;
+    color: white;
+}
+
+.create {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.counter {
+    position: absolute;
+    right: 7%;
+    top: 3.5%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.esc {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    border: 0;
+}
+
 
 button {
     width: fit-content;
@@ -121,4 +174,14 @@ button {
     position: absolute;
     right: 0;
     top: 0;
+}
+
+h2 {
+
+    word-wrap: break-word;
+    /* Handles long words */
+    overflow-wrap: break-word;
+    /* Handles long words and word breaks */
+    white-space: normal;
+    /* Allows text to wrap onto multiple lines */
 }
