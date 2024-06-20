@@ -1,0 +1,9 @@
+.container {
+    background-color: purple;
+    font-size: 36px;
+    width: 400px;
+    border-radius: 20px;
+    width: 30%;
+    color: white;
+    text-align: center;
+}
