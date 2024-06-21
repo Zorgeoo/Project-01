@@ -3,7 +3,7 @@ export const SecondSection = () => {
     return (
         <div className="bg-gray-50 h-screen border ">
             <div className="flex flex-col items-center py-[96px] px-[80px] w-[70%] m-auto">
-                <Button title="About me" desc="dadasda" />
+                <Button title="About me" />
                 <div className="flex h-[1000px] px-[32px] py-[50px] sm:flex-col gap-[48px]">
                     <div className="flex-1 flex border justify-start w-[520px] h-[520px]">
                         <img src="Tom02.png" className=" w-full h-full object-contain" />
