@@ -4,10 +4,10 @@ import styles from "./Navbar.module.css"
 
 export const LandingPage = () => {
     return (
-        <div className="h-screen">
-            <header className="flex border w-4/5 mx-auto justify-between content-center py-[16px] sm:w-full p-[16px] items-center">
+        <div className="">
+            <header className="flex  w-4/5  mx-auto justify-between content-center py-[16px] lg:w-full p-[16px] items-center">
                 <div className="text-[30px] font-extrabold" >ZORGOO</div>
-                <div className="flex border gap-[24px] content-center sm:hidden">
+                <div className="flex gap-[24px] content-center lg:hidden">
                     <div className="flex gap-[24px] content-center m-auto">
                         <div>About</div>
                         <div>Work</div>
@@ -19,16 +19,16 @@ export const LandingPage = () => {
                         <button className="px-[16px] py-[6px] rounded-[12px] bg-black text-white">Download CV</button>
                     </div>
                 </div>
-                <img src="bar.png" className="hidden sm:block" />
+                <img src="bar.png" className="hidden lg:block" />
                 {/* <div className="hidden w-11/12 sm:block">
                     <div className="text-[30px] font-extrabold" >ZORGOO</div>
                     <div></div>
                     <div></div>
                 </div> */}
             </header >
-            <div>
-                <container className="flex border h-[1000px] py-[96px] px-[80px] items-center gap-[48px] sm:flex-col-reverse sm:mt-[200px]">
-                    <div className="flex-1 border flex flex-col gap-[48px]">
+            <div className="w-4/5 mx-auto">
+                <container className="flex  py-[96px] items-center gap-[48px] lg:flex-col-reverse lg:mt-[100px]">
+                    <div className="flex-1  flex flex-col gap-[100px] justify-between">
                         <div>
                             <div className="text-[60px]">Hi, I’m ZORGOO 👋</div>
                             <div>I specialize in full stack development, particularly with React.js and Node.js.
@@ -46,7 +46,7 @@ export const LandingPage = () => {
                         </div>
                         <img src="Links.png" className="w-[120px] h-[40px]" />
                     </div>
-                    <div className="flex-1 border items-center flex justify-end">
+                    <div className="flex-1 items-center flex justify-end">
                         <img src="Pic Container.png" />
                     </div>
                 </container>
