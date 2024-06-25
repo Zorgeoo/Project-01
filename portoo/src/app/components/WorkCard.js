@@ -45,7 +45,7 @@ export const WorkCard = (props) => {
                         <Button title={item.text} />
                     ))}
                 </div>
-                <img src="Sharebutton.png" className="w-[50px] h-[50px]" />
+                <img src="Sharebutton.png" className="w-[36px] h-[36px]" />
             </div>
         </div>
     )
