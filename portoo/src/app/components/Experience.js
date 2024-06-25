@@ -1,6 +1,6 @@
 import { Button } from "./Button";
 import { ExperienceCard } from "./ExperienceCard"
-const data = [{ date: "Hello", title: "Hide", list: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "jdhLorem ipsum dolor sit amet, consectetur adipiscing elit.cbdjhbvc", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."] }, { date: "pro", title: "medium", list: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."] }, { date: "easy", title: "eazy", list: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.",] }]
+const data = [{ date: "Nov 2021 - Present", title: "Sr. Frontend Developer", list: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "jdhLorem ipsum dolor sit amet, consectetur adipiscing elit.cbdjhbvc", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."] }, { date: "Jul 2017 - Oct 2021", title: "Team Lead", list: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."] }, { date: "Dec 2015 - May 2017", title: "Full Stack Developer", list: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.",] }]
 export const Experience = () => {
     return (
         <div className="bg-gray-50  py-[96px]" >

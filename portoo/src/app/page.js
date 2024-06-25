@@ -9,7 +9,7 @@ import { Footer } from "./components/Footer"
 export default function Home() {
   return (
     <div>
-      <container>
+      <container >
         <LandingPage />
         <SecondSection />
         <SkillsSection />

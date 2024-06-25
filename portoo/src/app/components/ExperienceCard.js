@@ -12,7 +12,7 @@ export const ExperienceCard = (props) => {
                     {props.list.map(item => <li>{item}</li>)}
                 </ul>
             </div>
-            <div>{props.date}</div>
+            <div className="w-[250px]">{props.date}</div>
         </div>
     )
 }

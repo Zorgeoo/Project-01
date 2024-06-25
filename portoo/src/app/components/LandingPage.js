@@ -6,7 +6,7 @@ export const LandingPage = () => {
     return (
         <div className="">
             <header className="flex  w-4/5  mx-auto justify-between content-center py-[16px] lg:w-full p-[16px] items-center">
-                <div className="text-[30px] font-extrabold" >ZORGOO</div>
+                <div className="text-[30px] fo font-extrabold" >TOM</div>
                 <div className="flex gap-[24px] content-center lg:hidden">
                     <div className="flex gap-[24px] content-center m-auto">
                         <div>About</div>
@@ -30,12 +30,12 @@ export const LandingPage = () => {
                 <container className="flex  py-[96px] items-center gap-[48px] lg:flex-col-reverse lg:mt-[100px]">
                     <div className="flex-1  flex flex-col gap-[100px] justify-between">
                         <div>
-                            <div className="text-[60px]">Hi, I’m ZORGOO 👋</div>
+                            <div className="text-[60px] text-bold">Hi, I’m TOM 👋</div>
                             <div>I specialize in full stack development, particularly with React.js and Node.js.
                                 My main goal is to create exceptional digital experiences that are fast, visually appealing, and accessible to everyone. With over 7 years of experience in web development, I continue to find joy in crafting innovative solutions and designs.</div>
                         </div>
-                        <div>
-                            <div className="flex m-auto items-center gap-[10px]">
+                        <div className="">
+                            <div className="flex m-auto items-center gap-[10px] pb-[8px]">
                                 <img src="Icon.png" className="h-[20px] w-[20px]" />
                                 <div>Ulaanbaatar, Mongolia</div>
                             </div>
