@@ -17,7 +17,7 @@ import { Git } from "../assets/Git";
 
 export const SkillsSection = () => {
     return (
-        <div className="">
+        <div className="w-[1440px] m-auto">
             <container className="py-[96px] flex flex-col items-center gap-[48px] w-4/5 mx-auto">
                 <Button title="Skills" />
                 <div>The skills, tools and technologies I am really good at:</div>

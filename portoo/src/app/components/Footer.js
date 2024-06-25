@@ -9,7 +9,8 @@ import { FiGithub } from "react-icons/fi";
 
 export const Footer = () => {
     return (
-        <div className="">
+        <div>
+            <div className="w-[1440px] m-auto">
             <container className="flex flex-col gap-[48px] px-[80px] py-[96px] items-center">
                 <Button title="Get in Touch" />
                 <div>What’s next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.</div>
@@ -34,6 +35,7 @@ export const Footer = () => {
                     </div>
                 </div>
             </container>
+            </div>
             <div className="flex items-center justify-center px-[80px] py-[24px] bg-gray-100 gap-[20px]">
                 <FaRegCopyright />
                 <div>2024 | Greetings with ❤️️ from Ulaanbaatar</div>

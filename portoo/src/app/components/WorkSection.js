@@ -4,7 +4,7 @@ import { WorkCard } from "./WorkCard";
 
 export const WorkSection = () => {
     return (
-        <div className="py-[96px]">
+        <div className="py-[96px] w-[1440px] m-auto">
             <container className=" w-4/5 mx-auto flex items-center flex-col gap-[48px]">
                 <Button title="Work" />
                 <div>Some of the noteworthy projects I have built:</div>
