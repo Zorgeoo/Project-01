@@ -59,7 +59,7 @@ export const LandingPage = (props) => {
               <img src="Links.png" className="w-[120px] h-[40px]" />
             </div>
             <div className="flex-1 items-center flex justify-end">
-              <img className=" " src="Pic Container.png" />
+              <img className=" " src="TOMPIC1" />
             </div>
           </container>
         </div>

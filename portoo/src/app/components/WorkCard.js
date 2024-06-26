@@ -39,7 +39,7 @@ export const WorkCard = (props) => {
         props.reverse ? "flex-row-reverse" : ""
       } lg:flex-col shadow-xl`}
     >
-      <div className="flex-1 bg-gray-100  p-[48px] dark:bg-[#111827]">
+      <div className="flex-1 bg-gray-100  p-[48px] dark:bg-[]">
         <img className="pt-[15px]" src={props.source} />
       </div>
       <div className="flex-1 flex flex-col p-[48px] justify-around h-[500px] dark:bg-[#1f2937]">
