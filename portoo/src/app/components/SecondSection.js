@@ -1,7 +1,7 @@
 import { Button } from "./Button";
 export const SecondSection = () => {
   return (
-    <div className="bg-gray-50 ">
+    <div className="bg-gray-50 dark:bg-[#111827]">
       <div className="w-[1440px] m-auto">
         <div className="w-4/5 mx-auto ">
           <div className="flex flex-col items-center py-[96px] m-auto">
@@ -10,7 +10,7 @@ export const SecondSection = () => {
               <div className="flex-1 flex  justify-start">
                 <img
                   src="Tom02.png"
-                  className=" w-full h-full object-contain drop-shadow-2xl"
+                  className=" w-full h-full object-contain"
                 />
               </div>
               <div className="flex-1 flex flex-col justify-evenly ">
