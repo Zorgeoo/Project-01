@@ -13,4 +13,5 @@
   z-index: 10;
   position: fixed;
   color: black;
+  box-shadow: -50px 0px 30px 15px #00000024;
 }

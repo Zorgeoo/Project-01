@@ -18,7 +18,7 @@ export const LandingPage = (props) => {
   return (
     <div className="dark:bg-black">
       <div className="w-[1440px] lg:w-[600px] m-auto">
-        <header className="flex  w-4/5  mx-auto justify-between content-center py-[16px] lg:w-full p-[16px] items-center ">
+        <header className="flex  w-4/5 mx-auto justify-between py-[16px] lg:w-full p-[16px] items-center relative ">
           <div className="text-[30px] fo font-extrabold">TOM</div>
           <div className="flex gap-[24px] content-center lg:hidden">
             <div className="flex gap-[24px] content-center m-auto">
@@ -36,10 +36,13 @@ export const LandingPage = (props) => {
               </button>
             </div>
           </div>
-          <button className="hidden lg:block" onClick={sideBar}>
-            <RxHamburgerMenu />
+          <button
+            className="hidden lg:block absolute right-0"
+            onClick={sideBar}
+          >
+            <RxHamburgerMenu className="text-[30px]" />
           </button>
-          <div>
+          <div className="hidden lg:block">
             <div
               className={`fixed top-0 left-[100%] w-[320px] h-screen transition duration-500 ease-in-out bg-white dark:bg-black dark:text-white ${
                 showNavBar ? styles.open : ""
@@ -47,7 +50,7 @@ export const LandingPage = (props) => {
             >
               <div className="p-[16px] flex justify-between">
                 <div className="text-[30px] font-extrabold">TOM</div>
-                <button className="">
+                <button onClick={sideBar}>
                   <EscButton />
                 </button>
               </div>
@@ -99,9 +102,9 @@ export const LandingPage = (props) => {
                 <FaFigma className="text-[24px]" />
               </div>
             </div>
-            <div className="flex-1 items-center flex justify-end">
+            <div className="flex-1 items-center flex justify-center">
               <img
-                className="shadow-[50px_40px_0px_0px_#00000024] dark:shadow-[50px_40px_0px_0px_#374151]"
+                className="shadow-[50px_40px_0px_0px_#00000024] dark:shadow-[50px_40px_0px_0px_#374151] w-[70%]"
                 src="TOMPIC1.png"
               />
             </div>

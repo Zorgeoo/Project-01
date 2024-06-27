@@ -7,7 +7,7 @@ export const SecondSection = () => {
           <div className="flex flex-col items-center py-[96px] m-auto">
             <Button title="About me" />
             <div className="flex px-[32px] py-[50px] lg:flex-col gap-[48px]">
-              <div className="flex-1 flex  justify-start">
+              <div className="flex-1 flex  justify-center">
                 <img
                   src="TOMPIC2.png"
                   className=" w-full h-full object-contain shadow-[-50px_40px_0px_0px_#00000024] dark:shadow-[-50px_40px_0px_0px_#374151]"

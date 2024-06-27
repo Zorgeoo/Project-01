@@ -31,8 +31,8 @@ export const Footer = () => {
           </div>
           <div>
             <div>You may also find me on these platforms!</div>
-            <div className="flex items-center justify-center gap-[10px] text-[20px]">
-              <FiGithub />
+            <div className="mt-[8px] flex items-center justify-center gap-[10px] text-[20px]">
+              <FiGithub className="text-[36px]" />
               <FiTwitter />
               <FaFigma />
             </div>
