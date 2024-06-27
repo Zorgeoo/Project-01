@@ -17,7 +17,7 @@ export const LandingPage = (props) => {
   };
   return (
     <div className="dark:bg-black">
-      <div className="w-[1440px] lg:w-[600px] m-auto">
+      <div className="max-w-screen-lg lg:w-[600px] m-auto">
         <header className="flex  w-4/5 mx-auto justify-between py-[16px] lg:w-full p-[16px] items-center relative ">
           <div className="text-[30px] fo font-extrabold">TOM</div>
           <div className="flex gap-[24px] content-center lg:hidden">

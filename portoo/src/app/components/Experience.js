@@ -28,7 +28,7 @@ export const Experience = () => {
   return (
     <div className="dark:bg-[#111827]">
       <div className=" py-[96px]">
-        <div className="w-[1440px] lg:w-[600px] m-auto">
+        <div className="max-w-screen-lg lg:w-[600px] m-auto">
           <container className="flex flex-col gap-[48px] items-center w-4/5 mx-auto">
             <Button className="" title="Experience" />
             <div className="self-center pb-[16px]">
