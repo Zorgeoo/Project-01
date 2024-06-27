@@ -2,15 +2,15 @@ import { Button } from "./Button";
 export const SecondSection = () => {
   return (
     <div className="bg-gray-50 dark:bg-[#111827]">
-      <div className="w-[1440px] m-auto">
+      <div className="w-[1440px]  lg:w-[600px] m-auto">
         <div className="w-4/5 mx-auto ">
           <div className="flex flex-col items-center py-[96px] m-auto">
             <Button title="About me" />
             <div className="flex px-[32px] py-[50px] lg:flex-col gap-[48px]">
               <div className="flex-1 flex  justify-start">
                 <img
-                  src="Tom02.png"
-                  className=" w-full h-full object-contain"
+                  src="TOMPIC2.png"
+                  className=" w-full h-full object-contain shadow-[-50px_40px_0px_0px_#00000024] dark:shadow-[-50px_40px_0px_0px_#374151]"
                 />
               </div>
               <div className="flex-1 flex flex-col justify-evenly ">

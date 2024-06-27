@@ -1,12 +1,23 @@
+"use client";
 import Image from "next/image";
 import styles from "./Navbar.module.css";
 import { SunIcon } from "../assets/SunIcon";
 import { MoonIcon } from "../assets/MoonIcon";
+import { FaFigma, FaGithub, FaTwitter } from "react-icons/fa";
+import { EscButton } from "../assets/EscButton";
+import { useState } from "react";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 export const LandingPage = (props) => {
+  const [showNavBar, setShowNav] = useState(false);
+
+  const sideBar = () => {
+    setShowNav(!showNavBar);
+    console.log("Hi");
+  };
   return (
     <div className="dark:bg-black">
-      <div className="w-[1440px] m-auto">
+      <div className="w-[1440px] lg:w-[600px] m-auto">
         <header className="flex  w-4/5  mx-auto justify-between content-center py-[16px] lg:w-full p-[16px] items-center ">
           <div className="text-[30px] fo font-extrabold">TOM</div>
           <div className="flex gap-[24px] content-center lg:hidden">
@@ -25,12 +36,38 @@ export const LandingPage = (props) => {
               </button>
             </div>
           </div>
-          <img src="bar.png" className="hidden lg:block" />
-          {/* <div className="hidden w-11/12 sm:block">
-                    <div className="text-[30px] font-extrabold" >ZORGOO</div>
-                    <div></div>
-                    <div></div>
-                </div> */}
+          <button className="hidden lg:block" onClick={sideBar}>
+            <RxHamburgerMenu />
+          </button>
+          <div>
+            <div
+              className={`fixed top-0 left-[100%] w-[320px] h-screen transition duration-500 ease-in-out bg-white dark:bg-black dark:text-white ${
+                showNavBar ? styles.open : ""
+              }`}
+            >
+              <div className="p-[16px] flex justify-between">
+                <div className="text-[30px] font-extrabold">TOM</div>
+                <button className="">
+                  <EscButton />
+                </button>
+              </div>
+              <div className="border border-l-0 border-r-0 flex flex-col gap-[16px] p-[16px] ">
+                <div>About</div>
+                <div>Work</div>
+                <div>Testimonials</div>
+                <div>Contact</div>
+              </div>
+              <div className="flex justify-between p-[16px] gap[16px]">
+                <div>Switch theme</div>
+                <button onClick={props.toggleDarkMode}>
+                  {props.isDark ? <MoonIcon /> : <SunIcon />}
+                </button>
+              </div>
+              <button className="w-[90%] ml-[16px] px-[16px] py-[6px] rounded-[12px] bg-black text-white dark:bg-white dark:text-black">
+                Download CV
+              </button>
+            </div>
+          </div>
         </header>
         <div className="w-4/5 mx-auto">
           <container className="flex  py-[96px] items-center gap-[48px] lg:flex-col-reverse lg:mt-[100px]">
@@ -56,10 +93,17 @@ export const LandingPage = (props) => {
                   <div>Available for new projects</div>
                 </div>
               </div>
-              <img src="Links.png" className="w-[120px] h-[40px]" />
+              <div className="flex gap-[10px]">
+                <FaGithub className="text-[24px] " />
+                <FaTwitter className="text-[24px]" />
+                <FaFigma className="text-[24px]" />
+              </div>
             </div>
             <div className="flex-1 items-center flex justify-end">
-              <img className=" " src="TOMPIC1" />
+              <img
+                className="shadow-[50px_40px_0px_0px_#00000024] dark:shadow-[50px_40px_0px_0px_#374151]"
+                src="TOMPIC1.png"
+              />
             </div>
           </container>
         </div>
