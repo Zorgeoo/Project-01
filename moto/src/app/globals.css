@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+}
+.fade > img {
+  animation: fade ease-in-out infinite;
+  animation-duration: 6s;
+  opacity: 0;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.fade > :nth-child(1) {
+  animation-delay: 4s;
+}
+.fade > :nth-child(2) {
+  animation-delay: 2s;
+}
+.fade > :nth-child(3) {
+  animation-delay: 0s;
+}
+header > div:hover {
+  border-top: orange 5px solid;
+}
+header > div {
+  border-top: 5px solid transparent;
+}
