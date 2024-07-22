@@ -2,7 +2,7 @@ import { Button } from "./Button";
 export const SecondSection = () => {
   return (
     <div className="bg-gray-50 dark:bg-[#111827]">
-      <div className="max-w-screen-lg  lg:w-[600px] m-auto">
+      <div className="max-w-screen-lg  lg:w-[600px] m-auto px-[400px]">
         <div className="w-4/5 mx-auto ">
           <div className="flex flex-col items-center py-[96px] m-auto">
             <Button title="About me" />

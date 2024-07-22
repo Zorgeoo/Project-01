@@ -5,19 +5,38 @@ import { SunIcon } from "../assets/SunIcon";
 import { MoonIcon } from "../assets/MoonIcon";
 import { FaFigma, FaGithub, FaTwitter } from "react-icons/fa";
 import { EscButton } from "../assets/EscButton";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 export const LandingPage = (props) => {
   const [showNavBar, setShowNav] = useState(false);
 
+  const [data, setData] = useState([]);
+  console.log("data", data);
+
   const sideBar = () => {
     setShowNav(!showNavBar);
     console.log("Hi");
   };
+
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const res = await fetch(`http://localhost:3007/`);
+
+        const data = await res.json();
+
+        setData(data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getData();
+  }, []);
+
   return (
-    <div className="dark:bg-black">
-      <div className="max-w-screen-lg lg:w-[600px] m-auto">
+    <div className="dark:bg-black overflow-hidden">
+      <div className="max-w-screen-lg lg:w-[600px] m-auto px-[400px]">
         <header className="flex  w-4/5 mx-auto justify-between py-[16px] lg:w-full p-[16px] items-center relative ">
           <div className="text-[30px] fo font-extrabold">TOM</div>
           <div className="flex gap-[24px] content-center lg:hidden">
@@ -84,6 +103,16 @@ export const LandingPage = (props) => {
                   accessible to everyone. With over 7 years of experience in web
                   development, I continue to find joy in crafting innovative
                   solutions and designs.
+                </div>
+                <div>
+                  <p>hello</p>
+                  {data.map((item, index) => {
+                    // return (
+                    <div key={index}>
+                      <h1>{item.title}</h1>
+                    </div>;
+                    // );
+                  })}
                 </div>
               </div>
               <div className="">

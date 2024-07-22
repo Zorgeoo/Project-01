@@ -7,13 +7,16 @@ import { Experience } from "./components/Experience";
 import { WorkSection } from "./components/WorkSection";
 import { Footer } from "./components/Footer";
 import { useState } from "react";
+import { useEffect } from "react";
 
 export default function Home() {
   const [isDark, setIsDark] = useState(false);
+
   const handleClick = () => {
     setIsDark(!isDark);
     console.log("Hi");
   };
+
   return (
     <div className={isDark ? "dark" : ""}>
       <container className="dark:text-white">
