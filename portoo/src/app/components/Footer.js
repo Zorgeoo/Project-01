@@ -14,7 +14,7 @@ export const Footer = () => {
         <container className="flex flex-col gap-[48px] px-[80px] py-[96px] items-center">
           <Button title="Get in Touch" />
           <div>
-            What’s next? Feel free to reach out to me if you're looking for a
+            What is next? Feel free to reach out to me if you're looking for a
             developer, have a query, or simply want to connect.
           </div>
           <div>

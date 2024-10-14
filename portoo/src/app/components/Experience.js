@@ -35,8 +35,9 @@ export const Experience = () => {
               Here is a quick summary of my most recent experiences:
             </div>
             <div className="flex flex-col gap-[48px]">
-              {data.map((item) => (
+              {data.map((item, index) => (
                 <ExperienceCard
+                  key={index}
                   list={item.list}
                   date={item.date}
                   title={item.title}

@@ -9,8 +9,8 @@ export const ExperienceCard = (props) => {
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li> */}
-          {props.list.map((item) => (
-            <li>{item}</li>
+          {props.list.map((item, index) => (
+            <li key={index}>{item}</li>
           ))}
         </ul>
       </div>

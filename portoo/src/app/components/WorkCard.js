@@ -35,7 +35,7 @@ const data = [
 export const WorkCard = (props) => {
   return (
     <div
-      className={`flex drop-shadow-md rounded-[12px] overflow-hidden drop-shadow-md ${
+      className={`flex rounded-[12px] overflow-hidden drop-shadow-md ${
         props.reverse ? "flex-row-reverse" : ""
       } lg:flex-col shadow-xl`}
     >
@@ -50,8 +50,8 @@ export const WorkCard = (props) => {
           faucibus orci luctus et ultrices posuere cubilia curae.
         </div>
         <div className="flex gap-[8px] flex-wrap text-[14px]">
-          {data.map((item) => (
-            <Button title={item.text} />
+          {data.map((item, index) => (
+            <Button key={index} title={item.text} />
           ))}
         </div>
         <img src="Sharebutton.png" className="w-[36px] h-[36px]" />
