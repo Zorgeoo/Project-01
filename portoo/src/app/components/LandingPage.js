@@ -93,42 +93,39 @@ export const LandingPage = (props) => {
         </header>
         <div className="w-4/5 mx-auto">
           <container className="flex  py-[96px] items-center gap-[48px] lg:flex-col-reverse lg:mt-[100px]">
-            <div className="flex-1  flex flex-col gap-[100px] justify-between">
-              <div>
-                <div className="text-[60px] text-bold">Hi, I’m TOM 👋</div>
-                <div>
+            <div className="flex flex-1 flex-col gap-6">
+              <div className="flex flex-col gap-2">
+                <h1 className=" text-4xl text-[#F9FAFB] lg:text-7xl font-bold dark:text-black">
+                  Hi, I’m Gerlee 🫶🏻
+                </h1>
+                <p>
                   I specialize in full stack development, particularly with
                   React.js and Node.js. My main goal is to create exceptional
                   digital experiences that are fast, visually appealing, and
                   accessible to everyone. With over 7 years of experience in web
                   development, I continue to find joy in crafting innovative
                   solutions and designs.
+                </p>
+              </div>
+              <div className="flex flex-col gap-2">
+                <div className="flex gap-2">
+                  {/* <img className="w-6 h-6 " src="/maps-icon.png" /> */}
+                  <MapsIcon color={state ? "black" : "#d1d5da"} />
+                  <p>Ulaanbaatar, Mongolia</p>
                 </div>
-                <div>
-                  <p>hello</p>
-                  {data.map((item, index) => {
-                    // return (
-                    <div key={index}>
-                      <h1>{item.title}</h1>
-                    </div>;
-                    // );
-                  })}
+                <div className="flex gap-2">
+                  <img className="w-6 h-6" src="/green-icon.png" />
+                  <p>Available for new projects</p>
                 </div>
               </div>
-              <div className="">
-                <div className="flex m-auto items-center gap-[10px] pb-[8px]">
-                  <img src="Icon.png" className="h-[20px] w-[20px]" />
-                  <div>Ulaanbaatar, Mongolia</div>
-                </div>
-                <div className="flex m-auto items-center gap-[10px] pl-[5px]">
-                  <img src="green dot.png" className="h-[10px] " />
-                  <div>Available for new projects</div>
-                </div>
-              </div>
-              <div className="flex gap-[10px]">
-                <FaGithub className="text-[24px] " />
-                <FaTwitter className="text-[24px]" />
-                <FaFigma className="text-[24px]" />
+              <Links state={state} />
+            </div>
+            <div className="flex flex-1 justify-center lg:justify-end">
+              <div className="h-[320px] w-[300px]">
+                <img
+                  className="h-full w-full object-cover shadow-[-20px_20px_8.0px_rgb(108,37,17)]"
+                  src="/self-port.jpg"
+                />
               </div>
             </div>
             <div className="flex-1 items-center flex justify-center">
