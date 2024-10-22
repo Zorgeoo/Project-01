@@ -110,7 +110,7 @@ export const LandingPage = (props) => {
               <div className="flex flex-col gap-2">
                 <div className="flex gap-2">
                   {/* <img className="w-6 h-6 " src="/maps-icon.png" /> */}
-                  <MapsIcon color={state ? "black" : "#d1d5da"} />
+                  {/* <MapsIcon color={state ? "black" : "#d1d5da"} /> */}
                   <p>Ulaanbaatar, Mongolia</p>
                 </div>
                 <div className="flex gap-2">
@@ -118,7 +118,7 @@ export const LandingPage = (props) => {
                   <p>Available for new projects</p>
                 </div>
               </div>
-              <Links state={state} />
+              {/* <Links state={state} />cle */}
             </div>
             <div className="flex flex-1 justify-center lg:justify-end">
               <div className="h-[320px] w-[300px]">
