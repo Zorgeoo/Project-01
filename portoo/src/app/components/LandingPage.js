@@ -36,7 +36,7 @@ export const LandingPage = (props) => {
 
   return (
     <div className="dark:bg-black overflow-hidden">
-      <div className="max-w-screen-lg lg:w-[600px] m-auto lg:py-[96px] px-[16px]">
+      <div className="max-w-screen-lg lg:w-[600px] m-auto lg:py-[96px] px-[200px]">
         <header className="flex  w-4/5 mx-auto justify-between py-[16px] lg:w-full p-[16px] items-center relative ">
           <div className="text-[30px] fo font-extrabold">TOM</div>
           <div className="flex gap-[24px] content-center lg:hidden">
@@ -50,7 +50,7 @@ export const LandingPage = (props) => {
               <button onClick={props.toggleDarkMode}>
                 {props.isDark ? <MoonIcon /> : <SunIcon />}
               </button>
-              <button className="px-[16px] py-[6px] rounded-[12px] bg-black text-white dark:bg-white dark:text-black">
+              <button className="px-[200px] py-[6px] rounded-[12px] bg-black text-white dark:bg-white dark:text-black">
                 Download CV
               </button>
             </div>
@@ -85,7 +85,7 @@ export const LandingPage = (props) => {
                   {props.isDark ? <MoonIcon /> : <SunIcon />}
                 </button>
               </div>
-              <button className="w-[90%] ml-[16px] px-[16px] py-[6px] rounded-[12px] bg-black text-white dark:bg-white dark:text-black">
+              <button className="w-[90%] ml-[16px] px-[200px] py-[6px] rounded-[12px] bg-black text-white dark:bg-white dark:text-black">
                 Download CV
               </button>
             </div>
