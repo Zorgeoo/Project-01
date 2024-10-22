@@ -7,7 +7,7 @@ export const SecondSection = () => {
           <div className="flex flex-col items-center py-[96px] m-auto">
             <Button title="About me" />
             <div className="flex px-[32px] py-[50px] lg:flex-col gap-[48px]">
-              <div className="flex justify-center items-center flex-col lg:flex-1  lg:items-start ">
+              <div className="flex justify-center items-center flex-col w-1/2  lg:items-start ">
                 <div className=" mb-[48px] h-[320px] w-[300px] lg:h-[480px] lg:w-[400px] ">
                   <img
                     className="h-full w-full object-cover shadow-md"
@@ -15,7 +15,7 @@ export const SecondSection = () => {
                   />
                 </div>
               </div>
-              <div className="flex-1 flex flex-col justify-evenly ">
+              <div className="w-1/2 flex flex-col justify-evenly ">
                 <div className="text-[30px]">
                   Curious about me? Here you have it:
                 </div>
