@@ -93,7 +93,7 @@ export const LandingPage = (props) => {
         </header>
         <div className="w-4/5 mx-auto">
           <container className="flex py-[96px] items-center gap-[48px] lg:flex-col-reverse lg:mt-[100px]">
-            <div className="flex flex-1 flex-col gap-6">
+            <div className="flex w-1/2 flex-col gap-6">
               <div className="flex flex-col gap-2">
                 <h1 className=" text-4xl text-[#F9FAFB] lg:text-7xl font-bold dark:text-black">
                   Hi, I’m Tom
@@ -116,7 +116,7 @@ export const LandingPage = (props) => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-1 justify-center lg:justify-end">
+            <div className="flex w-1/2 justify-center lg:justify-end">
               <div className="h-[320px] w-[300px]">
                 <img
                   className="h-full w-full object-cover shadow-md"
