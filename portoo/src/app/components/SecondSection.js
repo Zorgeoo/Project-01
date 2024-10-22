@@ -4,7 +4,7 @@ export const SecondSection = () => {
     <div className="bg-gray-50 dark:bg-[#111827]">
       <div className="max-w-screen-lg  lg:w-[600px] m-auto px-[400px]">
         <div className="w-4/5 mx-auto ">
-          <div className="flex flex-col items-center py-[96px] m-auto">
+          {/* <div className="flex flex-col items-center py-[96px] m-auto">
             <Button title="About me" />
             <div className="flex px-[32px] py-[50px] lg:flex-col gap-[48px]">
               <div className="flex-1 flex  justify-center">
@@ -49,6 +49,48 @@ export const SecondSection = () => {
                 </div>
               </div>
             </div>
+          </div> */}
+          <div className="flex justify-center items-center flex-col lg:flex-1  lg:items-start ">
+            <div className=" mb-[48px] h-[320px] w-[300px] lg:h-[480px] lg:w-[400px] ">
+              <img
+                className="h-full w-full object-cover shadow-[20px_20px_8.0px_rgba(0,0,0,0.38)]"
+                src="/self-port2.jpg"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col gap-[16px] lg:flex-1">
+            <h1 className="text-[24px] font-bold">
+              Curious about me? Here you have it:
+            </h1>
+            <p>
+              I am a designer turned full stack developer, passionate about
+              React.js and Node.js. I excel in blending technical and visual
+              aspects to craft exceptional digital products, prioritizing user
+              experience, precise design, and optimized code.
+            </p>
+            <p>
+              Since starting my web development journey in 2015, I have embraced
+              challenges and kept up with the latest tech trends. Now in my
+              early thirties, seven years in, I am building cutting-edge web
+              apps using Next.js, TypeScript, Nestjs, Tailwindcss, Supabase, and
+              more.
+            </p>
+            <p>
+              With a progressive mindset, I enjoy the entire product development
+              process, from ideation to execution. Off duty, you will find me on
+              Twitter, tracking startup journeys, or unwinding. Follow me for
+              tech insights and public project updates on Twitter or GitHub.
+            </p>
+            <p>Finally, some quick bits about me.</p>
+            <ul>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+            </ul>
+            <p>
+              One last thing, I am available for freelance work, so feel free to
+              reach out and say hello! I promise I do not bite 😉
+            </p>
           </div>
         </div>
       </div>
