@@ -36,7 +36,7 @@ export const LandingPage = (props) => {
 
   return (
     <div className="dark:bg-black overflow-hidden">
-      <div className="max-w-screen-lg lg:w-[600px] m-auto px-1">
+      <div className="max-w-screen-lg lg:w-[600px] m-auto lg:py-[96px] px-[16px]">
         <header className="flex  w-4/5 mx-auto justify-between py-[16px] lg:w-full p-[16px] items-center relative ">
           <div className="text-[30px] fo font-extrabold">TOM</div>
           <div className="flex gap-[24px] content-center lg:hidden">
@@ -91,7 +91,7 @@ export const LandingPage = (props) => {
             </div>
           </div>
         </header>
-        <div className="w-4/5 mx-auto border">
+        <div className="w-4/5 mx-auto">
           <container className="flex py-[96px] items-center gap-[48px] lg:flex-col-reverse lg:mt-[100px]">
             <div className="flex flex-1 flex-col gap-6">
               <div className="flex flex-col gap-2">
