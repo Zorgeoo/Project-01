@@ -95,7 +95,7 @@ export const LandingPage = (props) => {
           <container className="flex py-[96px] items-center gap-[48px] lg:flex-col-reverse lg:mt-[100px]">
             <div className="flex w-1/2 flex-col gap-6">
               <div className="flex flex-col gap-2">
-                <h1 className=" text-4xl text-[#F9FAFB] lg:text-7xl font-bold dark:text-black">
+                <h1 className=" text-4xl text-black lg:text-7xl font-bold dark:text-white">
                   Hi, I’m Tom
                 </h1>
                 <p>
