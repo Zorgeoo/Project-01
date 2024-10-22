@@ -91,7 +91,7 @@ export const LandingPage = (props) => {
             </div>
           </div>
         </header>
-        <div className="w-4/5 mx-auto">
+        <div className="w-4/5 mx-auto border">
           <container className="flex py-[96px] items-center gap-[48px] lg:flex-col-reverse lg:mt-[100px]">
             <div className="flex flex-1 flex-col gap-6">
               <div className="flex flex-col gap-2">
@@ -119,7 +119,7 @@ export const LandingPage = (props) => {
             <div className="flex flex-1 justify-center lg:justify-end">
               <div className="h-[320px] w-[300px]">
                 <img
-                  className="h-full w-full object-cover shadow-[-20px_20px_8.0px_rgb(108,37,17)]"
+                  className="h-full w-full object-cover shadow-md"
                   src="/TOMPIC1.png"
                 />
               </div>
