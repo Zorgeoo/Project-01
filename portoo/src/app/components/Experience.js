@@ -28,8 +28,8 @@ export const Experience = () => {
   return (
     <div className="dark:bg-[#111827]">
       <div className=" py-[96px]">
-        <div className="max-w-screen-lg lg:w-[600px] m-auto lg:py-[96px] px-[200px]">
-          <container className="flex flex-col gap-[48px] items-center w-4/5 mx-auto">
+        <div className="max-w-screen-lg lg:w-[600px] m-auto lg:py-[96px] ">
+          <container className="flex flex-col gap-[48px] items-center w-3/5 lg:w-full mx-auto">
             <Button className="" title="Experience" />
             <div className="self-center pb-[16px]">
               Here is a quick summary of my most recent experiences:

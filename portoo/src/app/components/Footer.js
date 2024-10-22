@@ -10,8 +10,8 @@ import { FiGithub } from "react-icons/fi";
 export const Footer = () => {
   return (
     <div className="dark:bg-black">
-      <div className="max-w-screen-lg  lg:w-[600px] m-auto lg:py-[96px] px-[200px]">
-        <container className="flex flex-col gap-[48px] px-[80px] py-[96px] items-center">
+      <div className="max-w-screen-lg  lg:w-[600px] m-auto lg:py-[96px] ">
+        <container className="flex flex-col gap-[48px] px-[80px] py-[96px] w-3/5 lg:w-full mx-auto items-center">
           <Button title="Get in Touch" />
           <div>
             What is next? Feel free to reach out to me if you are looking for a

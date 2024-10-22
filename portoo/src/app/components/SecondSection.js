@@ -2,20 +2,20 @@ import { Button } from "./Button";
 export const SecondSection = () => {
   return (
     <div className="bg-gray-50 dark:bg-[#111827]">
-      <div className="max-w-screen-lg  lg:w-[600px] m-auto lg:py-[96px] px-[200px]">
-        <div className="w-4/5 mx-auto ">
+      <div className="max-w-screen-lg  lg:w-[600px] m-auto lg:py-[96px] ">
+        <div className="w-3/5 lg:w-full mx-auto">
           <div className="flex flex-col items-center py-[96px] m-auto">
             <Button title="About me" />
             <div className="flex px-[32px] py-[50px] lg:flex-col gap-[48px]">
-              <div className="flex justify-center items-center flex-col w-1/2  lg:items-start ">
-                <div className=" mb-[48px] h-[320px] w-[300px] lg:h-[480px] lg:w-[400px] ">
+              <div className="flex justify-center items-center flex-col w-1/2 lg:w-4/5 lg:mx-auto ">
+                <div className=" mb-[48px] h-[480px] w-[400px] lg:h-[320px] lg:w-[300px]">
                   <img
                     className="h-full w-full object-cover shadow-md"
                     src="/TOMPIC2.png"
                   />
                 </div>
               </div>
-              <div className="w-1/2 flex flex-col justify-evenly ">
+              <div className="w-1/2 lg:w-4/5 flex flex-col lg:mx-auto justify-evenly ">
                 <div className="text-[30px]">
                   Curious about me? Here you have it:
                 </div>

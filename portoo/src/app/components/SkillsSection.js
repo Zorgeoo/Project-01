@@ -18,8 +18,8 @@ import { Git } from "../assets/Git";
 export const SkillsSection = () => {
   return (
     <div className="dark:bg-black">
-      <div className="max-w-screen-lg lg:w-[600px] m-auto lg:py-[96px] px-[200px]">
-        <container className="py-[96px] flex flex-col items-center gap-[48px] w-4/5 mx-auto">
+      <div className="max-w-screen-lg lg:w-[600px] m-auto lg:py-[96px] ">
+        <container className="py-[96px] px-4 flex flex-col items-center gap-[48px] w-3/5 lg:w-full mx-auto">
           <Button title="Skills" />
           <div>The skills, tools and technologies I am really good at:</div>
           <div className="grid grid-cols-8 gap-20 lg:grid-cols-3">

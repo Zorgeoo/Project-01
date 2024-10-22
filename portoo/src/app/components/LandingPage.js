@@ -36,8 +36,8 @@ export const LandingPage = (props) => {
 
   return (
     <div className="dark:bg-black overflow-hidden">
-      <div className="max-w-screen-lg lg:w-[600px] m-auto lg:py-[96px] px-[200px]">
-        <header className="flex  w-4/5 mx-auto justify-between py-[16px] lg:w-full p-[16px] items-center relative ">
+      <div className="max-w-screen-lg lg:w-[600px] m-auto lg:py-[96px] ">
+        <header className="flex  w-3/5 mx-auto justify-between py-[16px] lg:w-full p-[16px] items-center relative ">
           <div className="text-[30px] fo font-extrabold">TOM</div>
           <div className="flex gap-[24px] content-center lg:hidden">
             <div className="flex gap-[24px] content-center m-auto">
@@ -50,7 +50,7 @@ export const LandingPage = (props) => {
               <button onClick={props.toggleDarkMode}>
                 {props.isDark ? <MoonIcon /> : <SunIcon />}
               </button>
-              <button className="px-[200px] py-[6px] rounded-[12px] bg-black text-white dark:bg-white dark:text-black">
+              <button className=" py-[6px] rounded-[12px] bg-black text-white dark:bg-white dark:text-black">
                 Download CV
               </button>
             </div>
@@ -85,15 +85,15 @@ export const LandingPage = (props) => {
                   {props.isDark ? <MoonIcon /> : <SunIcon />}
                 </button>
               </div>
-              <button className="w-[90%] ml-[16px] px-[200px] py-[6px] rounded-[12px] bg-black text-white dark:bg-white dark:text-black">
+              <button className="w-fit px-2 lg:w-full ml-[16px] rounded-[12px] bg-black  text-white dark:bg-white dark:text-black">
                 Download CV
               </button>
             </div>
           </div>
         </header>
-        <div className="w-4/5 mx-auto">
+        <div className="w-3/5 lg:w-full mx-auto">
           <container className="flex py-[96px] items-center gap-[48px] lg:flex-col-reverse lg:mt-[100px]">
-            <div className="flex w-1/2 flex-col gap-6">
+            <div className="flex w-1/2 lg:w-4/5 flex-col gap-6">
               <div className="flex flex-col gap-2">
                 <h1 className=" text-4xl text-black lg:text-7xl font-bold dark:text-white">
                   Hi, I’m Tom
@@ -116,8 +116,8 @@ export const LandingPage = (props) => {
                 </div>
               </div>
             </div>
-            <div className="flex w-1/2 justify-center lg:justify-end">
-              <div className="h-[320px] w-[300px]">
+            <div className="flex w-1/2 lg:w-4/5 justify-center">
+              <div className="h-[440px] w-[360px] lg:h-[320px] lg:w-[300px]">
                 <img
                   className="h-full w-full object-cover shadow-md"
                   src="/TOMPIC1.png"
