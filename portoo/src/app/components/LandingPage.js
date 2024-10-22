@@ -96,7 +96,7 @@ export const LandingPage = (props) => {
             <div className="flex flex-1 flex-col gap-6">
               <div className="flex flex-col gap-2">
                 <h1 className=" text-4xl text-[#F9FAFB] lg:text-7xl font-bold dark:text-black">
-                  Hi, I’m Gerlee 🫶🏻
+                  Hi, I’m Tom
                 </h1>
                 <p>
                   I specialize in full stack development, particularly with
@@ -127,12 +127,6 @@ export const LandingPage = (props) => {
                   src="/self-port.jpg"
                 />
               </div>
-            </div>
-            <div className="flex-1 items-center flex justify-center">
-              <img
-                className="shadow-[50px_40px_0px_0px_#00000024] dark:shadow-[50px_40px_0px_0px_#374151] w-[70%]"
-                src="TOMPIC1.png"
-              />
             </div>
           </container>
         </div>
